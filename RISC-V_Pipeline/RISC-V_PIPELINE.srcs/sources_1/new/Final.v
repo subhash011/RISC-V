@@ -22,12 +22,12 @@ module Final(input clk);
     wire [288:0] idex_register;
     wire [202:0] exmem_register;
     wire [134:0] memwb_register;
-//    InstructionModule im(clk,pc,data,stop,ifid_register);
+    InstructionModule im(clk,pc,data,stop,ifid_register);
     InstructionDecodeStage ids(clk, memwb_register, ifid_register, stop, idex_register,rd);
-//    immediateGenerate ig(data,immediate,idex_register);
-//    control cntrl(data,opcode,ALUOp,Branch,MemRead,MemtoReg,MemWrite,ALUSrc,RegWrite);
-//    InstructionDecode rm(clk,memwb_register,ifid_register,stop,op1,op2,idex_register);
-//    programcounter pcount(PCSrc,stop,data,pcimm,pc);
+    immediateGenerate ig(data,immediate,idex_register);
+    control cntrl(data,opcode,ALUOp,Branch,MemRead,MemtoReg,MemWrite,ALUSrc,RegWrite);
+    InstructionDecode rm(clk,memwb_register,ifid_register,stop,op1,op2,idex_register);
+    programcounter pcount(PCSrc,stop,data,pcimm,pc);
     alu al(clk,stop,idex_register,aluout,ALUZero,exmem_register);
     DataMemory dm(clk,exmem_register,dmout, memwb_register);
 endmodule
