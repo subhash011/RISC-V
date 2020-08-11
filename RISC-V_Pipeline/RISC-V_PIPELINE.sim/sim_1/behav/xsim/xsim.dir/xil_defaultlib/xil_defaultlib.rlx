@@ -1,0 +1,7 @@
+0.6
+2019.2
+Dec  5 2019
+05:06:03
+C:/Users/subha/Desktop/Subhash/Verilog/RISC-V_PIPELINE/RISC-V_PIPELINE.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/subha/Desktop/Subhash/Verilog/RISC-V_PIPELINE/RISC-V_PIPELINE.srcs/sources_1/new/Final.v,1588349118,verilog,,,,DataMemory;Final;InstructionDecode;InstructionModule;alu;control;immediateGenerate;programcounter,,,,,,,,
+C:/Users/subha/Desktop/Subhash/Verilog/RISC-V_PIPELINE/RISC-V_PIPELINE.srcs/sources_1/new/InstructionDecodeStage.v,1588346344,verilog,,C:/Users/subha/Desktop/Subhash/Verilog/RISC-V_PIPELINE/RISC-V_PIPELINE.srcs/sources_1/new/Final.v,,InstructionDecodeStage,,,,,,,,

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RISC-V_PIPELINE.srcs/sources_1/new/InstructionDecodeStage.v" \
+"../../../../RISC-V_PIPELINE.srcs/sources_1/new/Final.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
